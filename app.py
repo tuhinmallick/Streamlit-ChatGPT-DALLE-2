@@ -28,8 +28,7 @@ def openai_image(prompt):
       n=1,
       size="256x256"
     )
-    image_url = response['data'][0]['url']
-    return image_url
+    return response['data'][0]['url']
 
 top_image = Image.open('static/banner_top.png')
 bottom_image = Image.open('static/banner_bottom.png')
